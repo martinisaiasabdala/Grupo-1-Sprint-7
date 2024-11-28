@@ -21,6 +21,9 @@
                 <!-- Botón para Crear Targeta -->
                 <a href="{% url 'create_card' %}" class="btn btn-primary w-100">Crear Targeta</a>
 
+                <!-- Botón para Solicitar Prestamo -->
+                <a href="{% url 'solicitar_prestamo' %}" class="btn btn-primary w-100">Solicitar Prestamo</a>
+
                 <!-- Botón para Detalle de Clientes -->
                 <a href="{% url 'detail' %}" class="btn btn-secondary w-100">Detalle de Cliente</a>
 
@@ -29,6 +32,11 @@
 
                 <!-- Botón para Listado Targetas -->
                 <a href="{% url 'client_cards' %}" class="btn btn-secondary w-100">Mis Targetas</a>
+
+                <!-- Botón para Listado Prestamos -->
+                <a href="{% url 'mis_prestamos' %}" class="btn btn-secondary w-100">Mis Prestamos</a>
+
+                
 
                 <!-- Formulario de Logout -->
                 <form action="{% url 'logout' %}" method="post">

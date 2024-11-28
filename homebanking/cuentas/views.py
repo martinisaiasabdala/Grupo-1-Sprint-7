@@ -11,7 +11,6 @@ def create_customer_account(request):
         form = CustomerAccountForm(request.POST)
         if form.is_valid():
             form.save()
-            messages.success(request, "¡Cuenta creada exitosamente!")
             return redirect('create_account')  
         else:
             messages.error(request, "Hubo un error al crear la cuenta.")

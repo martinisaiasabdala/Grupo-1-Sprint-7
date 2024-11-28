@@ -18,7 +18,6 @@ def create_card(request):
             card.fk_card_customer = customer  
             card.save()  
 
-            messages.success(request, '¡La tarjeta se ha creado correctamente!')
             return redirect('home')  
 
     else:
